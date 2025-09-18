@@ -9,8 +9,8 @@ dotenv.config();
 const app = express();
 
 const allowedOrigins = [
-  "http://localhost:5173",                // local dev
-  "https://newsbot-frontend.vercel.app"   // deployed frontend
+  "http://localhost:5173",                
+  "https://news-bot-azure.vercel.app"   
 ];
 
 app.use(cors({
