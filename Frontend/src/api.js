@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:8080"; 
+const API_BASE = import.meta.env.VITE_RENDER_URL || "http://localhost:8080"; 
 
 // Create a new session
 export async function getSession() {
