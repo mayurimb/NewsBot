@@ -1,0 +1,30 @@
+@use "sass:color";
+@use "./variables" as *;
+
+.header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .reset-btn {
+    background: $primary;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      background: color.adjust($primary, $lightness: -8%);
+    }
+  }
+}

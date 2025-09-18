@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  background: $app-bg;
+}
+
+.chat-window {
+  flex: 1; 
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 0; 
+}

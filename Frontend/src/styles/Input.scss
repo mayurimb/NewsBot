@@ -1,0 +1,33 @@
+@use "sass:color";
+@use "./variables" as *;
+
+.chat-input {
+  display: flex;
+  padding: 0.8rem;
+  background: white;
+  border-top: 1px solid #ddd;
+  margin-top: auto; // ensures it always sticks to the bottom
+
+  input {
+    flex: 1;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  button {
+    background: $primary;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      background: color.adjust($primary, $lightness: -8%);
+    }
+  }
+}

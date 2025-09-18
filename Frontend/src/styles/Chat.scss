@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+.chat-window {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 0;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 0.6rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+
+  &.user {
+    background: $user-bubble;
+    color: white;
+    align-self: flex-end;
+  }
+
+  &.bot {
+    background: $bot-bubble;
+    color: black;
+    align-self: flex-start;
+  }
+
+  &.loading {
+    font-style: italic;
+    opacity: 0.7;
+  }
+}
